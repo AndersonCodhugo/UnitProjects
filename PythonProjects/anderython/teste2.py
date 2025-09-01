@@ -1,0 +1,5 @@
+n=input('Digite qualquer coisa que vier a sua mente:')
+print(f'Só tem espaço no que você digitou? {n.istitle()}')
+print(f'O que você digitou tem apenas caracteres maiusculos?{n.isupper()}')
+print(f'Sua mensagem é alfanumérica?{n.isalnum()}')
+print(f'Sua digitação está capitalizada?{n.istitle()}')

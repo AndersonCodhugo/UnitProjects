@@ -1,0 +1,6 @@
+x=input('Write something ')
+print('O tipo primitivo é',type(x))
+print('Only have spaces? {}'.format(x.isspace()))
+print('Is numeric? {}'.format(x.isnumeric()))
+print('Is alphabetic? {}'.format(x.isalpha()))
+print('Is alphanumeric? {}'.format(x.isalnum()))
