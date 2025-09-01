@@ -1,0 +1,27 @@
+table{
+    border: 1px   solid;
+    border-color: blue;
+}
+thead {
+    background-color: rgb(255, 0, 106);
+    color:white;
+}
+
+div > p{
+    color: red
+}
+
+a:link,
+a:visited{
+    color:green;
+    font-weight: bold;
+}
+a:hover {
+    color:red;
+    font-size: 20px;
+}
+.box::before {
+    content:"Anderson";
+    color: blue;
+    font-weight: bold;
+}

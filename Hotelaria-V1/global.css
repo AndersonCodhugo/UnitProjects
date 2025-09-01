@@ -1,0 +1,14 @@
+
+body {
+  	margin: 0;
+  	line-height: normal;
+}
+
+
+:root {
+  	
+  	/* Fonts */
+  	--font-kanit: Kanit;
+    --font-instrumentalsans: Instrument Sans;
+  	
+}

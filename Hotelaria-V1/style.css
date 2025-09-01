@@ -1,0 +1,85 @@
+.sid{
+border-radius: 40px;
+background: lightgray 50% / cover no-repeat;
+}
+
+.home {
+    width: 57px;
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Instrument Sans';
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left
+}
+
+.sidtrip {
+    width: 82px;
+    position: relative;
+    font-size: 24px;
+    display: inline-block;
+    font-family: 'Instrument Sans';
+    color: #000;
+    text-align: absolute;
+}
+
+.favoritos{
+    width: 88px;
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Instrument Sans';
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+
+.heart{
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+}
+
+.br_lulacoins{
+    width: 128px;
+    position: relative;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.70);
+    font-family: "Instrument Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#login{
+    width: 66px;
+    height: 38px;
+    position: relative;
+    flex-shrink: 0;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.70);
+    font-family: "Kanit";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    nav-down: auto;
+    width: 10%;
+    position: relative;
+    border-radius: 50px;
+    background-color: #c5b34f;
+    height: 49px;
+    left: 57%;
+}
+
+.fundo {
+    width: 100%;
+    position: center;
+    max-width: 100%;
+    overflow: hidden;
+    height: 622px;
+    object-fit: cover;
+    left: 0px;
+    top: 50%;
+}
+

@@ -1,0 +1,7 @@
+num = int(input('Digite um número:'))
+cont = 0
+soma = 0
+while cont < num:
+    cont += 1
+    soma = cont + soma
+    print(soma)

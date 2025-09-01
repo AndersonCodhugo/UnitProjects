@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body {
+    background-color: rgb(255, 238, 0);
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    background-color: red;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+th {
+    color: black;
+    background-color: white;
+}
+
+td {
+    color: purple;
+    background-color: pink;
+    font-weight: 900;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    gap: 10%;
+}
+
+label {
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+select, option {
+    padding: 10px;
+    color: coral;
+    font-weight: 700;
+}
+
+button {
+    color: black;
+    background-color: red;
+}
+
+input {
+    padding: 15px;
+}
+
+textarea {
+    height: 200px;
+    width: 500px;
+}
+
+input, textarea {
+    font-size: 18px;
+}
+
+button#enviarForms {
+    padding: 10px
+}

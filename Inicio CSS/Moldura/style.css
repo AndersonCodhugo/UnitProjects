@@ -1,0 +1,17 @@
+div {
+    padding: 50px;
+    border: 4px solid;
+    border-style: dashed;
+    position: absolute;
+    display: flex;
+
+}
+
+
+a{
+    border: 30px solid;
+    padding: 30px;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
