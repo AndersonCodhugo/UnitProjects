@@ -44,9 +44,9 @@ public class tamagoshi {
     }
 
     public String toString() {
-        return "Nome: " + this.name + " Fome: "
-                + this.fome + " Saúde: "
-                + this.saude + " " +
-                "Idade: " + this.idade;
+        return "Nome: " + name +
+                "\nFome: " + fome +
+                "\nSaúde: " + saude +
+                "\nIdade: " + idade;
     }
 }

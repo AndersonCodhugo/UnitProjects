@@ -4,6 +4,9 @@ public class maiTamagoshi {
         tamagoshi seuTamagoshi = new tamagoshi("Emanoel", 99.0, 15, 23);
 
         System.out.println(meuTamagoshi);
+
+        System.out.println();
+
         System.out.println(seuTamagoshi);
 
         System.out.println("Tamagoshis com alterações");
