@@ -1,37 +1,32 @@
 package com.firstapp.atividadeseis.controllers;
 
-import com.firstapp.atividadeseis.dto.HospedesDTO;
+import com.firstapp.atividadeseis.model.Reserva;
+import com.firstapp.atividadeseis.repository.ReservaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/hotel/reservas")
 public class HotelController {
 
-    private static final List<HospedesDTO> reservas = new ArrayList<>();
+    @Autowired
+    private ReservaRepository reservaRepository;
 
     @PostMapping
-    public ResponseEntity<HospedesDTO> receberReserva(@RequestBody HospedesDTO reserva) {
-        reservas.add(reserva);
-        return new ResponseEntity<>(reserva, HttpStatus.CREATED);
-    }
-
-    @GetMapping("/{nome}")
-    public ResponseEntity<HospedesDTO> verReserva(@PathVariable String nome) {
-        for (HospedesDTO reserva : reservas) {
-            if (reserva.getNome().equalsIgnoreCase(nome)) {
-                return new ResponseEntity<>(reserva, HttpStatus.OK);
-            }
-        }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    public ResponseEntity<Reserva> receberReserva(@RequestBody Reserva reserva) {
+        Reserva novaReserva = reservaRepository.save(reserva);
+        return new ResponseEntity<>(novaReserva, HttpStatus.CREATED);
     }
 
     @GetMapping
-    public ResponseEntity<List<HospedesDTO>> listarReservas() {
-        return new ResponseEntity<>(reservas, HttpStatus.OK);
+    public ResponseEntity<List<Reserva>> listarReservas(@RequestParam(required = false) String email) {
+        if (email != null) {
+            return new ResponseEntity<>(reservaRepository.findByEmail(email), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(reservaRepository.findAll(), HttpStatus.OK);
     }
 }
