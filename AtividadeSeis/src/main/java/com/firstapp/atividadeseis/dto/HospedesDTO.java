@@ -12,7 +12,7 @@ public class HospedesDTO {
     String sexo;
     String email;
     LocalDate dataChegada;
-    String numNoites;
-    String numHospedes;
+    int numNoites;
+    int numHospedes;
     String Mensagem;
 }
