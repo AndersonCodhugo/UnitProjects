@@ -5,10 +5,12 @@ using namespace std;
 
 
 //comentários são iguais ao java
-bool isAlive { true };
+int HealthLevel { 0 };
+bool isAlive { HealthLevel > 0 };
 string Name { "Vecna" };
 int Level { 14 };
 
+//testando condicionais e novas formas de definição de variaveis
 int main() {
     setlocale(LC_ALL, "Portuguese");
     cout << "Olá mundo!\n";
@@ -24,5 +26,5 @@ int main() {
     {
         cout << "Já estou morto.";
     }
-    
+//espaço para loopings
 }
