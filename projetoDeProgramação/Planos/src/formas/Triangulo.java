@@ -1,17 +1,25 @@
 package formas;
 import app.GeoPlano;
 
-public class Triangulo extends GeoPlano {
+public class Triangulo extends GeoPlano implements InterfacePlanos {
+    private double lado;
+    private double altura;
+    private double base;
 
-    public Triangulo() {
-        super(0, 0, "Triangulo");
+    public Triangulo(double lado, double altura, double base) {
+        super("Triângulo");
+        this.lado = lado;
+        this.altura = altura;
+        this.base = base;
     }
 
-    public void imprimirPerimetro() {
-        System.out.println();
+    @Override
+    public void calcularPerimetro() {
+        this.perimetro = this.lado + this.altura + this.base;
     }
 
-    public void imprimirArea() {
-        System.out.println();
+    @Override
+    public void calcularArea() {
+        this.area = (this.base * this.altura) / 2.0;
     }
 }

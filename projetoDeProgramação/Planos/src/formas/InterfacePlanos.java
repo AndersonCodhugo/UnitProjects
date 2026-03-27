@@ -1,9 +1,6 @@
 package formas;
 
 public interface InterfacePlanos {
-
-    void imprimirPerimetro();
-    void imprimirArea();
-
-
+    void calcularPerimetro();
+    void calcularArea();
 }
