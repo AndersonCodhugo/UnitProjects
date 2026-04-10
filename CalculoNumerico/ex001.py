@@ -1,4 +1,4 @@
-from Pacote_Algoritmos.algoritmos import biseccao, newton, secante
+from Pacote_Algoritmos.algoritmos import biseccao, newton, secante, gauss_seidel
 from sympy import symbols, diff, lambdify, sqrt, acos
 
 r = 2
@@ -23,3 +23,16 @@ h1 = 1.5
 print(biseccao(f, a, b, 1e-10))
 print(newton(f, df, h0, 1e-10))
 print(secante(f, h00, h1, 1e-10))
+
+
+
+matrix_A = [
+    [4, 1, 2],
+    [-1, 4, 3],
+    [3, -7, 5]
+]
+
+b = [8, 1, 10]
+
+print(gauss_seidel(matrix_A, b, 3, 10e-10, 150))
+
